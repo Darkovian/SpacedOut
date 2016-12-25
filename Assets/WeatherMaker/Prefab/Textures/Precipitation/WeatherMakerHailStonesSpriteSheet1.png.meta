@@ -1,0 +1,640 @@
+fileFormatVersion: 2
+guid: f6f2656fad8ff644cb27a56c0324f651
+timeCreated: 1456954564
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HailStonesSpriteSheet_0
+    21300002: HailStonesSpriteSheet_1
+    21300004: HailStonesSpriteSheet_2
+    21300006: HailStonesSpriteSheet_3
+    21300008: HailStonesSpriteSheet_4
+    21300010: HailStonesSpriteSheet_5
+    21300012: HailStonesSpriteSheet_6
+    21300014: HailStonesSpriteSheet_7
+    21300016: HailStonesSpriteSheet_8
+    21300018: HailStonesSpriteSheet_9
+    21300020: HailStonesSpriteSheet_10
+    21300022: HailStonesSpriteSheet_11
+    21300024: HailStonesSpriteSheet_12
+    21300026: HailStonesSpriteSheet_13
+    21300028: HailStonesSpriteSheet_14
+    21300030: HailStonesSpriteSheet_15
+    21300032: HailStonesSpriteSheet_16
+    21300034: HailStonesSpriteSheet_17
+    21300036: HailStonesSpriteSheet_18
+    21300038: HailStonesSpriteSheet_19
+    21300040: HailStonesSpriteSheet_20
+    21300042: HailStonesSpriteSheet_21
+    21300044: HailStonesSpriteSheet_22
+    21300046: HailStonesSpriteSheet_23
+    21300048: HailStonesSpriteSheet_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 4
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 1
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 0
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 0
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: HailStonesSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1135
+        width: 198
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 79.5}
+        - {x: -26, y: 79.5}
+        - {x: -72, y: 64.5}
+        - {x: -99, y: 44.5}
+        - {x: -99, y: -59.5}
+        - {x: -74, y: -73.5}
+        - {x: -61, y: -79.5}
+        - {x: 61, y: -79.5}
+        - {x: 92, y: -72.5}
+        - {x: 99, y: -46.5}
+        - {x: 99, y: 24.5}
+    - name: HailStonesSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1131
+        width: 277
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 101.5, y: 50}
+        - {x: 63.5, y: 69}
+        - {x: 19.5, y: 72}
+        - {x: -63.5, y: 72}
+        - {x: -78.5, y: 68}
+        - {x: -138.5, y: 26}
+        - {x: -138.5, y: -33}
+        - {x: -118.5, y: -48}
+        - {x: -101.5, y: -67}
+        - {x: -56.5, y: -72}
+        - {x: 67.5, y: -72}
+        - {x: 76.5, y: -71}
+        - {x: 138.5, y: -43}
+        - {x: 138.5, y: 13}
+    - name: HailStonesSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1108
+        width: 209
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 72.5, y: 66.5}
+        - {x: -2.5, y: 83.5}
+        - {x: -72.5, y: 83.5}
+        - {x: -104.5, y: 26.5}
+        - {x: -104.5, y: -37.5}
+        - {x: -65.5, y: -73.5}
+        - {x: -38.5, y: -83.5}
+        - {x: 36.5, y: -83.5}
+        - {x: 95.5, y: -67.5}
+        - {x: 104.5, y: -52.5}
+        - {x: 104.5, y: 30.5}
+        - {x: 101.5, y: 44.5}
+    - name: HailStonesSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 1092
+        width: 205
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 59.5, y: 95.5}
+        - {x: 48.5, y: 97.5}
+        - {x: -16.5, y: 97.5}
+        - {x: -77.5, y: 82.5}
+        - {x: -102.5, y: 58.5}
+        - {x: -102.5, y: -19.5}
+        - {x: -83.5, y: -72.5}
+        - {x: -24.5, y: -97.5}
+        - {x: 56.5, y: -97.5}
+        - {x: 87.5, y: -83.5}
+        - {x: 102.5, y: -60.5}
+        - {x: 102.5, y: 41.5}
+    - name: HailStonesSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1117
+        width: 199
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 46.5, y: 63}
+        - {x: -56.5, y: 63}
+        - {x: -99.5, y: 32}
+        - {x: -99.5, y: -39}
+        - {x: -82.5, y: -63}
+        - {x: 68.5, y: -63}
+        - {x: 92.5, y: -58}
+        - {x: 99.5, y: -34}
+        - {x: 99.5, y: 30}
+        - {x: 94.5, y: 37}
+    - name: HailStonesSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 874
+        width: 217
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50.5, y: 61.5}
+        - {x: 30.5, y: 82.5}
+        - {x: 23.5, y: 89.5}
+        - {x: -38.5, y: 89.5}
+        - {x: -108.5, y: 22.5}
+        - {x: -108.5, y: -55.5}
+        - {x: -60.5, y: -89.5}
+        - {x: 101.5, y: -89.5}
+        - {x: 108.5, y: -87.5}
+        - {x: 108.5, y: -19.5}
+        - {x: 65.5, y: 42.5}
+    - name: HailStonesSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 872
+        width: 225
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 77.5, y: 76}
+        - {x: 61.5, y: 85}
+        - {x: -2.5, y: 85}
+        - {x: -53.5, y: 79}
+        - {x: -87.5, y: 76}
+        - {x: -112.5, y: 23}
+        - {x: -112.5, y: -47}
+        - {x: -109.5, y: -52}
+        - {x: -69.5, y: -85}
+        - {x: 50.5, y: -85}
+        - {x: 84.5, y: -82}
+        - {x: 112.5, y: -60}
+        - {x: 112.5, y: 15}
+        - {x: 110.5, y: 34}
+    - name: HailStonesSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 871
+        width: 187
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53.5, y: 78.5}
+        - {x: -72.5, y: 78.5}
+        - {x: -93.5, y: 53.5}
+        - {x: -93.5, y: 6.5}
+        - {x: -74.5, y: -64.5}
+        - {x: -37.5, y: -78.5}
+        - {x: 75.5, y: -78.5}
+        - {x: 92.5, y: -75.5}
+        - {x: 93.5, y: -70.5}
+        - {x: 93.5, y: -0.5}
+        - {x: 67.5, y: 72.5}
+    - name: HailStonesSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 872
+        width: 205
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 75.5}
+        - {x: -40.5, y: 73.5}
+        - {x: -102.5, y: -1.5}
+        - {x: -102.5, y: -55.5}
+        - {x: -76.5, y: -75.5}
+        - {x: 43.5, y: -75.5}
+        - {x: 102.5, y: -39.5}
+        - {x: 102.5, y: 20.5}
+        - {x: 49.5, y: 75.5}
+    - name: HailStonesSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 872
+        width: 179
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -66.5, y: 72}
+        - {x: -89.5, y: 34}
+        - {x: -89.5, y: -64}
+        - {x: -41.5, y: -72}
+        - {x: 65.5, y: -72}
+        - {x: 89.5, y: -44}
+        - {x: 89.5, y: 42}
+        - {x: 39.5, y: 72}
+    - name: HailStonesSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 560
+        width: 208
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 97, y: 63}
+        - {x: 71, y: 95}
+        - {x: 43, y: 100}
+        - {x: -23, y: 100}
+        - {x: -41, y: 91}
+        - {x: -88, y: 42}
+        - {x: -104, y: -7}
+        - {x: -104, y: -66}
+        - {x: -102, y: -79}
+        - {x: -55, y: -100}
+        - {x: 38, y: -100}
+        - {x: 94, y: -80}
+        - {x: 104, y: -43}
+        - {x: 104, y: 40}
+    - name: HailStonesSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 604
+        width: 221
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: 73}
+        - {x: -59.5, y: 73}
+        - {x: -79.5, y: 70}
+        - {x: -110.5, y: 29}
+        - {x: -110.5, y: -45}
+        - {x: -72.5, y: -73}
+        - {x: 77.5, y: -73}
+        - {x: 110.5, y: -35}
+        - {x: 110.5, y: 25}
+        - {x: 107.5, y: 34}
+    - name: HailStonesSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 598
+        width: 201
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52.5, y: 67}
+        - {x: -82.5, y: 63}
+        - {x: -100.5, y: 53}
+        - {x: -100.5, y: -13}
+        - {x: -94.5, y: -50}
+        - {x: -27.5, y: -67}
+        - {x: 56.5, y: -67}
+        - {x: 100.5, y: -51}
+        - {x: 100.5, y: 41}
+        - {x: 45.5, y: 67}
+    - name: HailStonesSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 599
+        width: 186
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 50, y: 89.5}
+        - {x: -45, y: 89.5}
+        - {x: -86, y: 64.5}
+        - {x: -93, y: 40.5}
+        - {x: -93, y: -46.5}
+        - {x: -83, y: -78.5}
+        - {x: -58, y: -89.5}
+        - {x: 41, y: -89.5}
+        - {x: 81, y: -79.5}
+        - {x: 93, y: -40.5}
+        - {x: 93, y: 52.5}
+        - {x: 91, y: 67.5}
+    - name: HailStonesSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 603
+        width: 254
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 116, y: 52.5}
+        - {x: 51, y: 69.5}
+        - {x: -15, y: 81.5}
+        - {x: -49, y: 81.5}
+        - {x: -106, y: 11.5}
+        - {x: -127, y: -25.5}
+        - {x: -127, y: -53.5}
+        - {x: -125, y: -63.5}
+        - {x: -115, y: -69.5}
+        - {x: -59, y: -81.5}
+        - {x: 76, y: -81.5}
+        - {x: 118, y: -45.5}
+        - {x: 127, y: -9.5}
+        - {x: 127, y: 43.5}
+    - name: HailStonesSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 302
+        width: 221
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 110.5, y: 8}
+        - {x: 71.5, y: 77}
+        - {x: 45.5, y: 89}
+        - {x: -43.5, y: 89}
+        - {x: -64.5, y: 84}
+        - {x: -110.5, y: 14}
+        - {x: -110.5, y: -59}
+        - {x: -108.5, y: -67}
+        - {x: -102.5, y: -77}
+        - {x: -61.5, y: -89}
+        - {x: 47.5, y: -89}
+        - {x: 83.5, y: -79}
+        - {x: 109.5, y: -54}
+        - {x: 110.5, y: -50}
+    - name: HailStonesSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 311
+        width: 202
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 77, y: 60}
+        - {x: 54, y: 89}
+        - {x: 29, y: 100}
+        - {x: -20, y: 100}
+        - {x: -64, y: 92}
+        - {x: -101, y: 51}
+        - {x: -101, y: -24}
+        - {x: -78, y: -80}
+        - {x: -48, y: -96}
+        - {x: -29, y: -100}
+        - {x: 45, y: -100}
+        - {x: 92, y: -73}
+        - {x: 101, y: -45}
+        - {x: 101, y: -3}
+    - name: HailStonesSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 340
+        width: 176
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -44, y: 76.5}
+        - {x: -88, y: 43.5}
+        - {x: -88, y: -27.5}
+        - {x: -79, y: -64.5}
+        - {x: -37, y: -76.5}
+        - {x: 41, y: -76.5}
+        - {x: 66, y: -72.5}
+        - {x: 88, y: -60.5}
+        - {x: 88, y: 72.5}
+        - {x: 65, y: 76.5}
+    - name: HailStonesSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 343
+        width: 208
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 61, y: 70.5}
+        - {x: -45, y: 70.5}
+        - {x: -104, y: 34.5}
+        - {x: -104, y: -37.5}
+        - {x: -74, y: -70.5}
+        - {x: 63, y: -70.5}
+        - {x: 95, y: -65.5}
+        - {x: 104, y: -56.5}
+        - {x: 104, y: 4.5}
+        - {x: 70, y: 69.5}
+    - name: HailStonesSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 344
+        width: 185
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92.5, y: 63.5}
+        - {x: 71.5, y: 85.5}
+        - {x: -19.5, y: 85.5}
+        - {x: -75.5, y: 65.5}
+        - {x: -92.5, y: 24.5}
+        - {x: -92.5, y: -36.5}
+        - {x: -51.5, y: -84.5}
+        - {x: -45.5, y: -85.5}
+        - {x: 29.5, y: -85.5}
+        - {x: 69.5, y: -63.5}
+        - {x: 91.5, y: -30.5}
+        - {x: 92.5, y: -25.5}
+    - name: HailStonesSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 74
+        width: 198
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96, y: 36}
+        - {x: 67, y: 73}
+        - {x: 23, y: 80}
+        - {x: -15, y: 80}
+        - {x: -99, y: 14}
+        - {x: -99, y: -80}
+        - {x: 49, y: -80}
+        - {x: 92, y: -56}
+        - {x: 99, y: -42}
+        - {x: 99, y: 17}
+    - name: HailStonesSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 66
+        width: 227
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.5, y: 75.5}
+        - {x: -71.5, y: 75.5}
+        - {x: -113.5, y: 30.5}
+        - {x: -113.5, y: -13.5}
+        - {x: -101.5, y: -59.5}
+        - {x: -38.5, y: -75.5}
+        - {x: 81.5, y: -75.5}
+        - {x: 113.5, y: -49.5}
+        - {x: 113.5, y: -8.5}
+        - {x: 93.5, y: 18.5}
+    - name: HailStonesSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 68
+        width: 185
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60.5, y: 55}
+        - {x: -6.5, y: 65}
+        - {x: -68.5, y: 65}
+        - {x: -92.5, y: 36}
+        - {x: -92.5, y: -56}
+        - {x: -55.5, y: -65}
+        - {x: 51.5, y: -65}
+        - {x: 89.5, y: -40}
+        - {x: 92.5, y: -28}
+        - {x: 92.5, y: 32}
+    - name: HailStonesSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 72
+        width: 157
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 65.5}
+        - {x: -54.5, y: 56.5}
+        - {x: -78.5, y: 24.5}
+        - {x: -78.5, y: -45.5}
+        - {x: -45.5, y: -65.5}
+        - {x: 78.5, y: -65.5}
+        - {x: 78.5, y: 23.5}
+        - {x: 37.5, y: 65.5}
+    - name: HailStonesSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 68
+        width: 258
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 96, y: 61.5}
+        - {x: 77, y: 91.5}
+        - {x: -22, y: 91.5}
+        - {x: -42, y: 82.5}
+        - {x: -95, y: 47.5}
+        - {x: -129, y: 16.5}
+        - {x: -129, y: -50.5}
+        - {x: -92, y: -78.5}
+        - {x: -34, y: -91.5}
+        - {x: 70, y: -91.5}
+        - {x: 105, y: -80.5}
+        - {x: 129, y: -59.5}
+        - {x: 129, y: -34.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Advertisements;
 
 public class playerMovement : MonoBehaviour {
 
@@ -38,7 +39,7 @@ public class playerMovement : MonoBehaviour {
 	void Update () {
         if (isAlive)
         {
-            lastKnownPos = gameObject.transform.position;
+            
             timeSinceLastShield = Time.timeSinceLevelLoad - timeOfLastShield;
             timeSinceLastShot = Time.timeSinceLevelLoad - timeOfLastShot;
 
@@ -65,17 +66,27 @@ public class playerMovement : MonoBehaviour {
 
         if (!isAlive)
         {
+            showAd();
             SceneManager.LoadScene(2);
         }
 
 
 	}
 
+    void showAd()
+    {
+        if (Advertisement.IsReady())
+        {
+            Advertisement.Show();
+        }
+    }
+
     public void shoot()
     {
         canMove = false;
-        gameObject.transform.position = lastKnownPos;
         GameObject.Instantiate(Resources.Load("bullet"));
+        gameObject.transform.position = lastKnownPos;
+
     }
 
     void handleFuel()
@@ -104,6 +115,7 @@ public class playerMovement : MonoBehaviour {
     {
         if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < 2 && canMove)
         {
+            lastKnownPos = gameObject.transform.position;
             gameObject.transform.position = new Vector3(-5.5f, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0);
         }
         

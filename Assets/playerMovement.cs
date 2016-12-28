@@ -25,10 +25,13 @@ public class playerMovement : MonoBehaviour {
     public float shootLock;
     public float shootCD;
     Vector3 lastKnownPos;
-    
+    public AudioClip laserSound;
+    public AudioClip pickupSound;
+    public AudioClip deathSound;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         isAlive = true;
         canMove = true;
         currentFuel = maxFuel;
@@ -86,13 +89,14 @@ public class playerMovement : MonoBehaviour {
         canMove = false;
         GameObject.Instantiate(Resources.Load("bullet"));
         gameObject.transform.position = lastKnownPos;
+        gameObject.GetComponent<AudioSource>().clip = laserSound;
+        gameObject.GetComponent<AudioSource>().Play();
 
     }
 
     void handleFuel()
     {
         currentFuel = currentFuel - (1 * fuelMult);
-        GameObject.Find("txt_Fuel").GetComponent<Text>().text = currentFuel.ToString();
         if (currentFuel == 0)
         {
             isAlive = false;
@@ -113,13 +117,21 @@ public class playerMovement : MonoBehaviour {
 
     void movementControl()
     {
-        if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < 2 && canMove)
+
+        if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < 2 && canMove && Input.touchCount > 0)
+        {
+            Touch moveTouch = Input.GetTouch(0);
+            gameObject.transform.position = new Vector3(-5.5f, Camera.main.ScreenToWorldPoint(moveTouch.position).y, 0);
+        }
+
+        // Testing Movement Code
+        /* if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < 2 && canMove)
         {
             lastKnownPos = gameObject.transform.position;
             gameObject.transform.position = new Vector3(-5.5f, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0);
         }
-        
-        
+        */
+
         /* if (Input.GetKey(KeyCode.W) == true)
         {
             if (gameObject.transform.position.y <= 4.5f)
@@ -154,6 +166,8 @@ public class playerMovement : MonoBehaviour {
             playerScoreBonus = playerScoreBonus + 100;
             currentFuel = currentFuel + 10;
             Destroy(collision.gameObject);
+            gameObject.GetComponent<AudioSource>().clip = pickupSound;
+            gameObject.GetComponent<AudioSource>().Play();
         }
 
         if (collision.gameObject.name.Contains("fuel"))
@@ -161,8 +175,10 @@ public class playerMovement : MonoBehaviour {
             playerScoreBonus = playerScoreBonus + 30;
             currentFuel = currentFuel + 45;
             Destroy(collision.gameObject);
+            gameObject.GetComponent<AudioSource>().clip = pickupSound;
+            gameObject.GetComponent<AudioSource>().Play();
         }
-        if (collision.gameObject.name.Contains("Obstacle"))
+        if (collision.gameObject.name.Contains("Obstacle") || collision.gameObject.name.Contains("enemyBullet"))
         {
             isAlive = false;
         }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class objectSpawning : MonoBehaviour {
+    public bool spawnEnabled = false;
+    public float beginDelay;
     public float spread;
     public float spreadBonus;
     float timeOfLastObstacle;
@@ -11,6 +13,7 @@ public class objectSpawning : MonoBehaviour {
     float timeSinceLastBonus;
     int die_roll;
     int die_roll2;
+    private bool beginningDelay = false;
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +25,24 @@ public class objectSpawning : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+    
+    if (beginningDelay == false && Time.timeSinceLevelLoad > beginDelay)
+        {
+            spawnEnabled = true;
+            beginningDelay = true;
+        }
 
+
+    if (spawnEnabled && GameObject.Find("GameMaster").GetComponent<GameMaster>().bossBattle == false)
+        {
+            spawnStuff();
+        }
+        
+
+	}
+
+    public void spawnStuff()
+    {
         //Obstacle Spawning Code
 
         timeSinceLastObstacle = Time.timeSinceLevelLoad - timeOfLastObstacle;
@@ -46,7 +66,7 @@ public class objectSpawning : MonoBehaviour {
             }
             timeOfLastObstacle = Time.timeSinceLevelLoad;
         }
-        
+
         // Bonus Spawning Code
 
         timeSinceLastBonus = Time.timeSinceLevelLoad - timeOfLastBonus;
@@ -79,6 +99,5 @@ public class objectSpawning : MonoBehaviour {
             }
             timeOfLastBonus = Time.timeSinceLevelLoad;
         }
-
-	}
+    }
 }

@@ -8,6 +8,7 @@ public class GameMaster : MonoBehaviour {
     public float playerScore;
     public bool bossBattle = false;
     bool doOnce = false;
+    public AudioClip playerDeath;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,12 @@ public class GameMaster : MonoBehaviour {
             bossBattle = true;
             GameObject.Instantiate(Resources.Load("boss1"));
         }*/
+
+        if (GameObject.Find("playerShip").GetComponent<playerMovement>().isAlive == false)
+        {
+            gameObject.GetComponent<AudioSource>().clip = playerDeath;
+            gameObject.GetComponent<AudioSource>().Play();
+        }
 	}
 
 }

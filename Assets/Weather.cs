@@ -15,10 +15,18 @@ public class Weather : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        WeatherScript.CurrentPrecipitation = WeatherScript.RainScript;
-        WeatherScript.PrecipitationIntensity = .5f;
-        WeatherScript.LightningScript.EnableLightning = true;
-        WeatherScript.CloudScript.enabled = false;
-        // WeatherScript.DayNightScript.TimeOfDay++;
+        if (PlayerPrefs.GetInt("WeatherFX") == 1)
+        {
+            WeatherScript.enabled = true;
+            WeatherScript.CurrentPrecipitation = WeatherScript.RainScript;
+            WeatherScript.PrecipitationIntensity = PlayerPrefs.GetFloat("PrecipStr");
+            WeatherScript.LightningScript.EnableLightning = true;
+            WeatherScript.CloudScript.enabled = false;
+            // WeatherScript.DayNightScript.TimeOfDay++;
+        }
+        else if (PlayerPrefs.GetInt("WeatherFX") == 0)
+        {
+            WeatherScript.enabled = false;
+        }
     }
 }

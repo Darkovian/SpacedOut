@@ -118,7 +118,7 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleIdentifier: com.DarkestProductions.SpacedOut
-  bundleVersion: 1.0
+  bundleVersion: 1.1
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1

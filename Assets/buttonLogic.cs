@@ -30,4 +30,14 @@ public class buttonLogic : MonoBehaviour {
         Destroy(GameObject.Find("GameMaster"));
         SceneManager.LoadScene(1);
     }
+
+    public void btnSettings()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void btnBack()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

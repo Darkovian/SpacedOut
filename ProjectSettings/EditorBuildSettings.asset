@@ -11,3 +11,5 @@ EditorBuildSettings:
     path: Assets/DodgeThemAll.unity
   - enabled: 1
     path: Assets/LoseMenu.unity
+  - enabled: 1
+    path: Assets/SettingsMenu.unity

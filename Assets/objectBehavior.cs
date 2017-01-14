@@ -16,7 +16,7 @@ public class objectBehavior : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position = new Vector3(gameObject.transform.position.x - (1 * speed), gameObject.transform.position.y);
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x - (1 * speed * PlayerPrefs.GetFloat("Difficulty")), gameObject.transform.position.y);
 
         if (gameObject.transform.position.x < -10)
         {

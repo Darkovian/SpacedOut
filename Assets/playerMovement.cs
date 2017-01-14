@@ -111,7 +111,7 @@ public class playerMovement : MonoBehaviour {
     void scoreAccumulation()
     {
         playerScoreBase = Time.timeSinceLevelLoad;
-        playerScore = playerScoreBase + playerScoreBonus;
+        playerScore = (playerScoreBase + playerScoreBonus) * PlayerPrefs.GetFloat("Difficulty");
         GameObject.Find("GameMaster").GetComponent<GameMaster>().playerScore = playerScore;
     }
 

@@ -12,10 +12,16 @@ public class weatherToggle : MonoBehaviour {
             gameObject.GetComponent<Toggle>().isOn = true;
         }
 
-        if (PlayerPrefs.GetInt("WeatherFX") == 0)
+        else if (PlayerPrefs.GetInt("WeatherFX") == 0)
         {
             gameObject.GetComponent<Toggle>().isOn = false;
         }
+
+        else
+        {
+            gameObject.GetComponent<Toggle>().isOn = true;
+        }
+
     }
 	
 	// Update is called once per frame

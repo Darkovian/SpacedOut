@@ -28,6 +28,8 @@ public class playerMovement : MonoBehaviour {
     public AudioClip laserSound;
     public AudioClip pickupSound;
     public AudioClip deathSound;
+    public bool debugMovement;
+    public int adCountValue;
 
 
     // Use this for initialization
@@ -36,7 +38,13 @@ public class playerMovement : MonoBehaviour {
         canMove = true;
         currentFuel = maxFuel;
         GameObject.Find("txtFuel").GetComponent<Text>().text = maxFuel.ToString();
-	}
+
+        if (!(PlayerPrefs.GetInt("adCount") >= 0 && PlayerPrefs.GetInt("adCount") <= 3))
+        {
+            PlayerPrefs.SetFloat("adCount", 0);
+        }
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -69,7 +77,15 @@ public class playerMovement : MonoBehaviour {
 
         if (!isAlive)
         {
-            showAd();
+            if (PlayerPrefs.GetInt("adCount") == adCountValue)
+            {
+                PlayerPrefs.SetFloat("adCount", 0);
+                showAd();
+            }
+            else
+            {
+                PlayerPrefs.SetInt("adCount", PlayerPrefs.GetInt("adCount") + 1);
+            }
             SceneManager.LoadScene(2);
         }
 
@@ -125,12 +141,12 @@ public class playerMovement : MonoBehaviour {
         }
 
         // Testing Movement Code
-        /* if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < 2 && canMove)
+        if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < 2 && canMove && debugMovement == true)
         {
             lastKnownPos = gameObject.transform.position;
             gameObject.transform.position = new Vector3(-5.5f, Camera.main.ScreenToWorldPoint(Input.mousePosition).y, 0);
         }
-        */
+        
 
         /* if (Input.GetKey(KeyCode.W) == true)
         {

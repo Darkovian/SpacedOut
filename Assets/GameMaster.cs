@@ -17,6 +17,7 @@ public class GameMaster : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        // BOSS BATTLE LGOIC
         /*if (playerScore > 1000 && doOnce == false)
         {
             doOnce = true;

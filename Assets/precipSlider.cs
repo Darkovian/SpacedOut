@@ -7,7 +7,15 @@ public class precipSlider : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        gameObject.GetComponent<Slider>().value = PlayerPrefs.GetFloat("PrecipStr");
+        if (PlayerPrefs.GetFloat("PrecipStr") >= 0 && PlayerPrefs.GetFloat("PrecipStr") <= 1)
+        {
+            gameObject.GetComponent<Slider>().value = PlayerPrefs.GetFloat("PrecipStr");
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("PrecipStr", 0.5f);
+            gameObject.GetComponent<Slider>().value = PlayerPrefs.GetFloat("PrecipStr");
+        }
 	}
 	
 	// Update is called once per frame

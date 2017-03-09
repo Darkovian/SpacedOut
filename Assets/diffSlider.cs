@@ -7,7 +7,15 @@ public class diffSlider : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        gameObject.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Difficulty");
+        if (PlayerPrefs.GetFloat("Difficulty") >= 0.6 && PlayerPrefs.GetFloat("Difficulty") <= 1.5)
+        {
+            gameObject.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Difficulty");
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("Difficulty", 1.0f);
+            gameObject.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Difficulty");
+        }
     }
 	
 	// Update is called once per frame
